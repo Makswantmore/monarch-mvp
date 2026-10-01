@@ -1,48 +1,188 @@
-# Miscellaneous
-*.class
-*.log
-*.pyc
-*.swp
-.DS_Store
-.atom/
-.build/
-.buildlog/
-.history
-.svn/
-.swiftpm/
-migrate_working_dir/
+# =========================
+# Flutter / Dart / Pub
+# =========================
+.dart_tool/
+.packages
+build/
+.flutter-plugins
+.flutter-plugins-dependencies
+coverage/
+lib/generated_plugin_registrant.dart
 
-# IntelliJ related
+# Keep pubspec.lock for applications.
+# Do not ignore pubspec.lock unless this is a library package.
+
+# =========================
+# Android
+# =========================
+android/local.properties
+android/key.properties
+android/*.jks
+android/*.keystore
+android/*.pk8
+android/*.pem
+android/*.p12
+android/*.pfx
+android/google-services.json
+android/firebase_options.dart
+android/app/google-services.json
+android/app/src/*/google-services.json
+
+# Gradle
+.gradle/
+android/.gradle/
+android/captures/
+android/gradle-app.setting
+!android/gradle/wrapper/gradle-wrapper.jar
+!android/gradlew
+!android/gradlew.bat
+
+# =========================
+# iOS / macOS
+# =========================
+ios/Pods/
+ios/.symlinks/
+ios/Flutter/Flutter.framework
+ios/Flutter/Flutter.podspec
+ios/Flutter/Generated.xcconfig
+ios/Flutter/flutter_export_environment.sh
+ios/ServiceDefinitions.json
+ios/Runner/GeneratedPluginRegistrant.*
+
+xcuserdata/
+*.moved-aside
+*.xccheckout
+*.xcscmblueprint
+
+# =========================
+# Web
+# =========================
+web/.dart_tool/
+web/build/
+web/node_modules/
+web/npm-debug.log*
+web/yarn-debug.log*
+web/yarn-error.log*
+
+# =========================
+# Windows / Linux / macOS desktop build artifacts
+# =========================
+windows/flutter/ephemeral/
+linux/flutter/ephemeral/
+macos/Flutter/ephemeral/
+
+# =========================
+# Secrets and confidential files
+# =========================
+.env
+.env.*
+*.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+secrets.json
+secrets.*
+*.secret
+*.secrets
+*.token
+*.tokens
+*.credentials
+*.credential
+service-account*.json
+firebase-adminsdk*.json
+*.gpg
+*.asc
+*.private
+*.priv
+*.key
+*.crt
+*.cer
+*.der
+*.pfx
+*.p12
+*.jks
+*.keystore
+
+# GitHub Actions local secrets, if ever stored locally
+.github/secrets/
+*.github_token
+*.gh_token
+
+# =========================
+# Logs
+# =========================
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+flutter_*.log
+
+# =========================
+# IDEs and editors
+# =========================
+.idea/
 *.iml
 *.ipr
 *.iws
-.idea/
 
-# The .vscode folder contains launch configuration and tasks you configure in
-# VS Code which you may wish to be included in version control, so this line
-# is commented out by default.
-#.vscode/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/launch.json
+!.vscode/settings.json
+!.vscode/tasks.json
 
-# Flutter/Dart/Pub related
-**/doc/api/
-**/ios/Flutter/.last_build_id
-.dart_tool/
-.flutter-plugins-dependencies
-.pub-cache/
-.pub/
-/build/
-/coverage/
+# If you do not want to share local editor settings, uncomment:
+# .vscode/settings.json
+# .vscode/launch.json
+# .vscode/tasks.json
 
-# Symbolication related
-app.*.symbols
+# =========================
+# OS generated files
+# =========================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
 
-# Obfuscation related
-app.*.map.json
+# =========================
+# Temporary and backup files
+# =========================
+*.tmp
+*.temp
+*.bak
+*.backup
+*.swp
+*.swo
+*~
 
-# Android Studio will place build artifacts here
-/android/app/debug
-/android/app/profile
-/android/app/release
+# =========================
+# Test and coverage artifacts
+# =========================
+coverage/
+test_coverage/
+*.lcov
 
-# Widget Preview related
-.widget_preview/
+# =========================
+# Local overrides
+# =========================
+*.local
+config/local.*
+config/*.local.*
+
+# =========================
+# Do NOT ignore these important files
+# =========================
+# pubspec.lock
+# android/gradlew
+# android/gradlew.bat
+# android/gradle/wrapper/gradle-wrapper.jar
+# android/gradle/wrapper/gradle-wrapper.properties
+# .github/workflows/
