@@ -1,0 +1,34 @@
+name: monarch_mvp
+description: Cross-platform personal finance MVP.
+publish_to: 'none'
+version: 0.1.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+  flutter: '>=3.10.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  intl: any
+  shared_preferences: ^2.2.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/icons/dashboard/
+    - assets/icons/transactions/
+    - assets/icons/budgets/
+    - assets/icons/settings/
+    - assets/icons/accounts/
+    - assets/icons/categories/
+    - assets/icons/brands/
+    - assets/icons/actions/
+    - assets/icons/status/
+    - assets/icons/misc/
